@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Solution 6.20</title>
+    <script type="text/javascript">
+        var firstNumber;
+        var secondNumber;
+        var thirdNumber;
+        var fourthNumber;
+        var fifthNumber;
+
+        var number1;
+        var number2;
+        var number3;
+        var number4;
+        var number5;
+
+        var smallest;
+        var largest;
+
+
+        number1 = window.prompt("Enter the first number");
+        firstNumber = parseInt(number1);
+        smallest = firstNumber;
+        largest = firstNumber;
+
+        number2 = window.prompt("Enter the second number");
+        secondNumber = parseInt(number2);
+        if(secondNumber < smallest)
+            smallest = secondNumber;
+        if(secondNumber > largest)
+            largest = secondNumber;
+
+        number3 = window.prompt("Enter the third number");
+        thirdNumber = parseInt(number3);
+        if(thirdNumber < smallest)
+            smallest = thirdNumber;
+        if(thirdNumber > largest)
+            largest = thirdNumber;
+
+    
+        number4 = window.prompt("Enter the fourth number");
+        fourthNumber = parseInt(number4);
+        if(fourthNumber < smallest)
+            smallest = fourthNumber;
+        if(fourthNumber > largest)
+            largest = fourthNumber;
+
+
+        number5 = window.prompt("Enter the fifth number");
+        fifthNumber = parseInt(number5);
+        if(fifthNumber < smallest)
+            smallest = fifthNumber;
+        if(fifthNumber > largest)
+            largest = fifthNumber;
+
+        document.writeln("<p>Largest: " + largest + "</p><p>Smallest: " + smallest + "</p>" )
+    </script>
+</head>
+<body>
+
+</body>
+</html>
