@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Solution 7.22</title>
+        <script type="text/javascript">
+            var digit1;
+            var digit2;
+            var digit3;
+            var digit4;
+
+            var inputString;
+            var encryptedNumber;
+
+            //Enter four digit number to be encrypted
+            inputString = window.prompt("Enter a four digit number: ");
+
+            var number = parseInt(inputString);
+
+            digit1 = parseInt((number / 1000 + 7) % 10);
+            digit2 = parseInt((number % 1000 / 100 + 7) % 10);
+            digit3 = parseInt((number % 1000 % 100  /10 + 7) % 10);
+            digit4 = parseInt((number % 1000 % 100 % 10 + 7) % 10);
+
+            encryptedNumber = "The encrypted number is " + digit1 + digit2 + digit3 + digit4;
+
+            document.writeln("<p>" + encryptedNumber + "</p>");
+      </script>
+    </head>
+    <body>
+
+    </body>
+</html>

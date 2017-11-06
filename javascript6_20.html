@@ -36,7 +36,7 @@
         thirdNumber = parseInt(number3);
         if(thirdNumber < smallest)
             smallest = thirdNumber;
-        if(thirdNumber > largest)
+        else if(thirdNumber > largest)
             largest = thirdNumber;
 
     
@@ -44,7 +44,7 @@
         fourthNumber = parseInt(number4);
         if(fourthNumber < smallest)
             smallest = fourthNumber;
-        if(fourthNumber > largest)
+        else if(fourthNumber > largest)
             largest = fourthNumber;
 
 
@@ -52,7 +52,7 @@
         fifthNumber = parseInt(number5);
         if(fifthNumber < smallest)
             smallest = fifthNumber;
-        if(fifthNumber > largest)
+        else if(fifthNumber > largest)
             largest = fifthNumber;
 
         document.writeln("<p>Largest: " + largest + "</p><p>Smallest: " + smallest + "</p>" )
