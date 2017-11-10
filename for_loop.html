@@ -11,7 +11,7 @@
        var highestInput = window.prompt("Please enter the highest number");
        var highest = parseInt(highestInput)
 
-       for(lower; lower <= highest; lower++)
+       for(lower; lower <= highest; lower += 2)
             sum += lower;
 
         document.writeln("The sum of the even integers from " + lowerInput + " to " + highestInput + " is " + sum);
